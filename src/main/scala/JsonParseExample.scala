@@ -6,7 +6,7 @@ object JsonParseExample extends App{
   case class Qux(someString:String, i: Int, d: Double) extends Foo
 
 //  val foo: Foo = Qux("Sasdsd", 13, 14.0)
-  val foo: Foo = Bar(Seq("asdd", "Asdasd"))
+  val foo:Foo = Bar(Seq("asdd", "Asdasd"))
 
   val json:String = foo.asJson.spaces2
   println(json)

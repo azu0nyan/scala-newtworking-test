@@ -50,7 +50,7 @@ object HttpServerMain extends App {
 
   Spark.get("/list", (request: Request, response: Response) => {
     PageTemplate.genPage(
-      div(table(border := "1px")(
+       div(table(border := "1px")(
         tr(
           th("id"),
           th("name")),
@@ -60,6 +60,7 @@ object HttpServerMain extends App {
         ))
       )
       ).render
+
     )
   })
 
